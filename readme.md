@@ -36,7 +36,7 @@ Spark is a framework for distributed processing, especially for processing of la
 
 ## Spark solution
 
-So how does the spark solution look like? In the simple example below, the log files are in a tab-separated format and we want to count the number of times a certain action (the third field of each row) occurs. Then we output the top 10 most frequent actions. The full example code is on github.com/.... See below for a summary:
+So how does the spark solution look like? In the simple example below, the log files are in a tab-separated format and we want to count the number of times a certain action (the third field of each row) occurs. Then we output the top 10 most frequent actions. The full example code is [here](https://github.com/EikeDehling/spark-log-analysis/blob/master/top-urls.py).
 
 ```
 	actions_counts = sc \
@@ -50,7 +50,7 @@ So how does the spark solution look like? In the simple example below, the log f
 		print("{0:<32} -> {1:>12}".format(action, count))
 ```
 
-As you can see, the boilerplate code is gone and with just a few lines we were able to get the information we wanted to know!
+As you can see, the boilerplate code is gone and with just a few lines we were able to get the information we wanted to know! Even though this example is simple, it shows the basics of how to program spark. Have fun!
 
 
 ## Running
